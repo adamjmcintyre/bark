@@ -1,1 +1,16 @@
-Bark's a (not really) fancy way to manage running JavaScript code on a given page. Basically, you can define a set of modules to run for a given selector. If that selector's present on a page, your code runs; if it's not, it won't.
+Bark's a (not really) fancy way to manage running JavaScript code on a given page. 
+
+Basically, you can define a set of modules to run for a given selector. If that selector's present on a page, your code runs; if it's not, it won't.
+
+Why's that useful? Well, if you're a fan of the module pattern, you'll probably wind up doing something like this over and over and over:
+
+$(document).ready(function(){
+    if($(body).hasClass('foo'){
+        // do this
+    }
+    else if($(body).hasClass('bar'){
+        // do something else
+    }
+})
+
+Why not keep it DRY and let something handle that for you?
