@@ -1,0 +1,1 @@
+Bark's a (not really) fancy way to manage running JavaScript code on a given page. Basically, you can define a set of modules to run for a given selector. If that selector's present on a page, your code runs; if it's not, it won't.
